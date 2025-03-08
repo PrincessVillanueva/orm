@@ -1,5 +1,5 @@
 const bcrypt = require('bcryptjs');
-const db = require('../_helpers/db');
+const db = require('../helpers/db');
 
 module.exports = {
   getAll,

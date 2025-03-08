@@ -1,4 +1,4 @@
-const config = require('./config.json'); // Ensure the path is correct
+const config = require('config.json'); // Ensure the path is correct
 const mysql = require('mysql2/promise');
 const { Sequelize } = require('sequelize');
 
@@ -27,5 +27,5 @@ async function initialize() {
   // Sync all models with the database
   await sequelize.sync({ alter: true });
 
-  console.log("✅ Database initialized and synced successfully!");
+  console.log(" Database initialized and synced successfully!");
 }
